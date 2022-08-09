@@ -1,0 +1,31 @@
+@import "../../../assets/stylesheets/mixins.scss";
+@import "../../../assets/stylesheets/variables.scss";
+
+.button {
+    width: 100%;
+    background-color: $color_blue_thirteen;
+    padding: 1rem;
+    text-align: center;
+    outline: 0;
+    @include text($font-avenir-medium, $font_size_14, 500, normal, normal, normal, normal);
+    color: $color_white_primary;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid $color_grey_three;
+    box-shadow: 0 2px 7px 0 $color_grey_rgba_five;
+
+    &:disabled {
+        cursor: not-allowed;
+        box-shadow: none;
+        background-color: $color_black_rgba_eleven;
+        color: $color_white_rgba_two;
+        border: none;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .button {
+        padding: 0.5px;
+    }
+}

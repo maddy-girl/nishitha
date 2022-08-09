@@ -1,0 +1,7 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+@font-face {
+  font-family: $font-avenir-medium;
+  src: url($assets-font-path+$font-Avenir-Medium-Filename) format("truetype");
+}

@@ -1,0 +1,40 @@
+@mixin text($family, $size, $weight, $style, $stretch, $height, $spacing) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  font-stretch: $stretch;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin flexCenter($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flexCustom($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin commonWidthLayout($bgColor) {
+  padding: 0 7.3rem;
+  background-color: $bgColor;
+}
+
+@mixin InputUserSelectInitial {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
+@mixin containerDesHeight {
+  height: calc(100% - 75px);
+  overflow-y: auto;
+}

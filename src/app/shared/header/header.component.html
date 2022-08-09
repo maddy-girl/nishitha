@@ -1,0 +1,16 @@
+<div class="header">
+    <div class="header_wrapper">
+        <div class="header_logo">
+            <div class="u_flex">
+                <img src="../../../assets/images/logo.jpg" class="u_width_height_100" />
+                <p class="header_logo-name">Quinbay Technologies</p>
+            </div>
+        </div>
+        <div class="header_input">
+            <div [ngClass]="{'header_search-disabled': !searchTerm}"><img src="../../../assets/images/search-icon.svg"
+                    (click)="onSearchClick()" /></div>
+            <input type="text" [(ngModel)]="searchTerm" (change)="onInputChange($event)" placeholder="search..." />
+            <img src="../../../assets/images/close.svg" (click)="onCloseClick()" />
+        </div>
+    </div>
+</div>

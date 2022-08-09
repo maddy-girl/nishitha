@@ -1,0 +1,28 @@
+@import '../assets/stylesheets/mixins.scss';
+@import '../assets/stylesheets/variables.scss';
+
+.product-pg {
+    @include commonWidthLayout($color_white_primary);
+    @include containerDesHeight;
+    margin-top: 2rem;
+
+    &_wrapper {
+        padding: 7rem 0 0 0;
+        background-color: $color_white_primary;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        margin: 0 2rem 2rem 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    &__footer {
+        padding: 2rem 0;
+    }
+}

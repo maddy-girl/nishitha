@@ -1,0 +1,33 @@
+<div class="product-ls_wrapper" (click)="onClickAddToCart(product)">
+    <div class="product-ls">
+        <div class="product-ls__image">
+            <img [src]="product.images[0]" class="product-ls__img" alt="mobile" />
+        </div>
+        <div class="product-ls__content">
+            <div>
+                <p class="product-ls__name" [title]="product.name">{{product.name }}</p>
+                <p class="product-ls__price-display">{{product.price.priceDisplay}}</p>
+                <div class="u_margin_bottom_7">
+                    <span class="product-ls__price-strike">{{product.price.strikeThroughPriceDisplay}}</span>
+                    <span *ngIf="product.price.discount >0"
+                        class="product-ls__price-discount">{{product.price.discount}}
+                        %</span>
+
+                </div>
+                <div class="product-ls__location">
+                    <img src="../../../assets/images/check-mark.svg" class="product-ls__loc-img" />
+                    <p class="product-ls__loc-name">{{product.location}} </p>
+                </div>
+                <div class="u_flex" *ngIf="product.review.rating">
+                    <img src="../../../assets/images/star-rating.png" class="product-ls__review" />
+                    <p class="product-ls__review-rate"> {{ product.review.rating }}</p>
+                    <p class="product-ls__review-count">({{ product.review.count }})</p>
+                </div>
+
+            </div>
+            <div>
+                <app-button text="Add to cart"></app-button>
+            </div>
+        </div>
+    </div>
+</div>

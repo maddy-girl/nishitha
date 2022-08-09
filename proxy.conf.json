@@ -1,0 +1,13 @@
+
+
+   {
+     "/api/*" :{
+      "target": "https://www.blibli.com",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  

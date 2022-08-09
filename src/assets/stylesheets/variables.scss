@@ -1,0 +1,150 @@
+/* Variables block */
+$color_white_primary: #ffffff;
+$color_white_two: #e7e7e7;
+$color_white_three: #fcfaf8;
+$color_white_four: #e6ebf0;
+$color_white_five: #e5e9f2;
+$color_white_six: #f4f4f4;
+$color_white_seven: #efeff3;
+$color_white_eight: #ececec;
+$color_white_nine: #f2f2f2;
+$color_white_ten: #efefef;
+$color_white_eleven: #bfc9d1;
+$color_white_twelve: #aaa;
+$color_white_thirteen: #e6e6e6;
+$color_white_fourteen: #cccccc;
+$color_white_fifteen: #d0d0d0;
+$color_white_sixteen: #f3f5fa;
+
+$color_blue_primary: #1d53c5;
+$color_blue_two: #0069ff;
+$color_blue_three: #3a1dc5;
+$color_blue_four: #0067ff;
+$color_blue_five: #92a6f9;
+$color_blue_six: #57a4ff;
+$color_blue_seven: #0030f6;
+$color_blue_eight: #5583ec;
+$color_blue_nine: #1665d8;
+$color_blue_ten: #7600ff;
+$color_blue_eleven: #4682b4;
+$color_blue_thirteen: #3C94D4;
+$color_blue_12: rgba(0, 48, 246, 0.15);
+
+$color_black: #000;
+$color_black_one: #323232;
+$color_black_two: #42505c;
+$color_black_three: #91919c;
+$color_black_four: #24243a;
+$color_black_five: #505050;
+
+$color_grey: #b3b3b3;
+$color_pale_grey: #f5f6fa;
+$color_pale_grey_two: #e4e7eb;
+$color_dark_grey: #2c3033;
+$color_dark_grey_two: #292b2c;
+$color_charcoal_grey: #2b3034;
+$color_charcoal_grey_two: #464a4e;
+$color_charcoal_grey_three: #2f3235;
+$color_charcoal_grey_four: #31394d;
+$color_grey_one: #e6e6e6;
+$color_grey_two: #c1c1c1;
+$color_grey_three: #979797;
+$color_grey_four: #f1effb;
+$color_grey_five: #9b9b9b;
+$color_grey_six: #4a4a4a;
+$color_grey_seven: #b8c5d3;
+$color_grey_eight: #dfdfdf;
+$color_grey_nine: #e4eaee;
+$color_grey_ten: #8b8795;
+$color_grey_eleven: #f2f1f1;
+$color_grey_twelve: #e8f0f8;
+$color_grey_thirteen: #B5B5B5;
+
+$color_red: #c51d1d;
+$color_light_red: #ff404b;
+$color_red_two: #de2b2b;
+$color_red_three: #fff0f0;
+$color_red_four: #cc3838;
+$color_red_five: #ff1c42;
+$color_red_six: #f27a78;
+$color_red_seven: #ff5660;
+$color_red_eight: #E7864D;
+$color_red_nine: #FBDFE0;
+$color_red_ten: #D76157;
+
+$color_green: #0b8f01;
+$color_green_one: #449d3b;
+$color_green_two: #35c984;
+$color_green_3: rgba(53, 201, 132, 0.15);
+
+$color_cyan: #00d7d2;
+
+$color_yellow: rgba(241, 184, 63, 0.2);
+$color_yellow_1: #f1b83f;
+
+$color_purple: #8300C6;
+
+/*rgba variables*/
+$color_black_rgba_one: rgba(0, 0, 0, 0.15);
+$color_black_rgba_two: rgba(0, 0, 0, 0.87);
+$color_black_rgba_three: rgba(0, 0, 0, 0.37);
+$color_black_rgba_four: rgba(0, 0, 0, 0.6);
+$color_black_rgba_five: rgba(50, 50, 50, 0.87);
+$color_black_rgba_six: rgba(0, 0, 0, 0.05);
+$color_black_rgba_seven: rgba(50, 50, 50, 0.72);
+$color_black_rgba_eight: rgba(0, 0, 0, 0.1);
+$color_black_rgba_nine: rgba(0, 0, 0, 0.87);
+$color_black_rgba_ten: rgba(0, 0, 0, 0.88);
+$color_black_rgba_eleven: rgba(0, 0, 0, 0.22);
+$color_black_rgba_twelve: rgba(0, 0, 0, 0.06);
+$color_black_rgba_thirteen: rgba(0, 0, 0, 0);
+
+$color_white_rgba_one: rgba(255, 255, 255, 0.87);
+$color_white_rgba_two: rgba(255, 255, 255, 0.37);
+$color_white_rgba_three: rgba(255, 255, 255, 0.6);
+$color_white_rgba_four: rgba(203, 198, 215, 0.15);
+$color_white_rgba_five: rgba(218, 218, 218, 0.5);
+
+$color_charcoal_grey_one: rgba(43, 48, 52, 0.1);
+$color_grey_rgba_one: rgba(34, 39, 42, 0.9);
+$color_grey_rgba_two: rgba(68, 68, 68, 0.5);
+$color_grey_rgba_three: rgba(75, 75, 75, 0.5);
+$color_grey_rgba_four: rgba(151, 151, 151, 0.1);
+$color_grey_rgba_five: rgba(120, 137, 149, 0.26);
+$color_grey_rgba_six: rgba(250, 217, 97, 0.2);
+
+$color_green_rgba_one: rgba(11, 143, 1, 0.87);
+
+/*Font path*/
+$assets-font-path: "../fonts/";
+
+/*Font Variables*/
+$font-roboto-medium: "Roboto-Medium";
+$font-roboto-regular: "Roboto-Regular";
+$font-avenir-roman: "Avenir-Roman";
+$font-avenir-black: "Avenir-Black";
+$font-avenir-book: "Avenir-Book"; //regular
+$font-avenir-demiBold: "Avenir-Next-Demi-Bold";
+$font-avenir-heavy: "Avenir-Heavy";
+$font-avenir-medium: "Avenir-Medium";
+
+/*Font size*/
+$font_size-10: 1rem;
+$font_size_12: 1.2rem;
+$font_size_13: 1.3rem;
+$font_size_14: 1.4rem;
+$font_size_15: 1.5rem;
+$font_size_16: 1.6rem;
+$font_size_18: 1.8rem;
+$font_size_20: 2rem;
+$font_size_24: 2.4rem;
+$font_size_25: 2.5rem;
+$font_size_27: 2.7rem;
+$font_size_28: 2.8rem;
+$font_size_30: 3rem;
+$font_size_32: 3.2rem;
+$font_size_40: 4rem;
+$font_size_70: 7rem;
+$font_size_56: 5.6rem;
+
+$font-Avenir-Medium-Filename: "Avenir-Medium.ttf";

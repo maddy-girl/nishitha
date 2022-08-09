@@ -1,0 +1,130 @@
+@import '../../../assets/stylesheets/mixins.scss';
+@import '../../../assets/stylesheets/variables.scss';
+
+.product-ls {
+    &_wrapper {
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    display: flex;
+    display: block;
+    width: 24.3rem;
+    height: 35.8rem;
+    margin: 0;
+    white-space: normal;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+    &__image {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 100%;
+        height: 15.1rem;
+        border-radius: 6px 6px 0 0;
+    }
+
+    &__content {
+        background-color: white;
+        width: 100%;
+        height: calc(100% - 15.1rem);
+        padding: 1.7rem 2rem 2rem 1.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name {
+        @include text($font-avenir-medium, $font_size_14, 600, normal, normal, normal, 1.5);
+        margin-bottom: 2px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price-display {
+        @include text($font-avenir-medium, $font_size_12, 600, normal, normal, normal, 1.5);
+        color: $color_red_eight;
+        margin-bottom: 2px;
+    }
+
+    &__price-strike {
+        text-decoration: line-through;
+        @include text($font-avenir-medium, $font_size_10, 600, normal, normal, normal, 1.5);
+        color: $color_grey_thirteen;
+        margin-bottom: 2px;
+    }
+
+    &__price-discount {
+        margin-left: 5px;
+        padding: 3px;
+        background-color: $color_red_nine;
+        border-radius: 6px;
+        @include text($font-avenir-medium, 8px, 600, normal, normal, normal, 1.5);
+        color: $color_red_ten;
+    }
+
+    &__review {
+        margin-bottom: 2px;
+        width: 13px;
+        height: 13px;
+
+        &-rate {
+            margin-left: 3px;
+            @include text($font-avenir-medium, $font_size_10, 600, normal, normal, normal, 1.5);
+        }
+
+        &-count {
+            margin-left: 3px;
+            @include text($font-avenir-medium, $font_size_10, 100, normal, normal, normal, 1.5);
+            color: $color_grey_thirteen;
+        }
+    }
+
+    &__location {
+        margin-bottom: 2px;
+        @include flexCustom(flex-start, center);
+    }
+
+    &__loc-img {
+        width: 12px;
+        height: 12px;
+    }
+
+    &__loc-name {
+        margin-left: 3px;
+        @include text($font-avenir-medium, $font_size_10, 600, normal, normal, normal, 1.5);
+        color: $color_grey_thirteen;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .product-ls {
+        display: block;
+        width: 100%;
+        height: 23rem;
+
+        &__img {
+            width: 100%;
+            height: 9rem;
+        }
+
+        &__content {
+            width: 100%;
+            height: calc(100% - 9rem);
+            padding: 1.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .product-ls {
+        width: 22rem;
+        height: 25rem;
+    }
+}

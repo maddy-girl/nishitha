@@ -1,0 +1,56 @@
+@import '../../../assets/stylesheets/mixins.scss';
+@import '../../../assets/stylesheets/variables.scss';
+
+.header {
+    width: 100%;
+    height: 7rem;
+    background-color: $color_white_primary;
+    position: fixed;
+    z-index: 4;
+    border-bottom: 1px solid $color_charcoal_grey_one;
+
+    &_wrapper {
+        height: 100%;
+        padding: 2rem;
+        @include flexCustom(space-between, center);
+    }
+
+    &_logo {
+        width: 5rem;
+        height: 5rem;
+
+        &-name {
+            margin-left: 3px;
+            @include text($font-avenir-medium, $font_size_14, 700, normal, normal, normal, normal);
+        }
+    }
+
+    &_input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color_white_primary;
+        border-radius: 6px;
+        border: 1px solid $color_charcoal_grey_one;
+        cursor: pointer;
+    }
+
+    &_search-disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+input {
+    padding: 10px;
+    border: none;
+    background-color: $color_white_primary;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+
+    &::-moz-selection,
+    &::selection {
+        background-color: transparent;
+    }
+}

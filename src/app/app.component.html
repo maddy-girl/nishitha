@@ -1,0 +1,20 @@
+<div>
+  <app-header (onSearch)="onClickSearch($event)"></app-header>
+  <div class="product-pg_wrapper">
+    <div class="product-pg">
+
+      <div *ngIf="productsList && productsList.length > 0" class="product-pg__list">
+        <div *ngFor="let item of productsList" class="product-pg__item">
+          <app-product-list [product]="item"></app-product-list>
+        </div>
+
+      </div>
+
+      <div class="product-pg__footer">
+        <app-pagination *ngIf="productsList && productsList.length>0" [start]="currentStart"
+          (onPrevChange)="onClickBack()" (onNextChange)="onClickNext()"></app-pagination>
+      </div>
+      <div *ngIf="isLoading">
+        <app-loader></app-loader>
+      </div>
+    </div>

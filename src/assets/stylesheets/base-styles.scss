@@ -1,0 +1,61 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html input[disabled] {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button:focus {
+  outline: none;
+}
